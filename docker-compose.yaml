@@ -29,10 +29,11 @@ services:
       - FFMPEG_NUM_THREADS=1
       - VIDEO_ENCODE_CODEC=libx264
       - VIDEO_ENCODE_CRF=23
-      - VIDEO_ENCODE_FPS=24
-      - VIDEO_ENCODE_MAX_WIDTH=1280
-      - VIDEO_ENCODE_MAX_HEIGHT=720
+      - VIDEO_ENCODE_FPS=25
+      - VIDEO_ENCODE_MAX_WIDTH=1408 
+      - VIDEO_ENCODE_MAX_HEIGHT=1056
       - VIDEO_ENCODE_VERBOSE=False
+      - MAX_UPLOAD_VIDEO_DURATION=60
     deploy:
       resources:
         reservations:
